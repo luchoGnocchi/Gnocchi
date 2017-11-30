@@ -1,0 +1,24 @@
+Fecha:21/10/2017 9:28:21|CREATE LOG FILE
+Fecha:21/10/2017 9:28:23|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:28:35|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicles
+Fecha:21/10/2017 9:35:25|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:35:35|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicles
+Fecha:21/10/2017 9:40:42|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:40:58|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 9:43:52|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:44:25|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 9:45:33|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:45:46|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 9:53:09|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 9:53:33|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 10:18:14|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 10:18:23|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 10:19:23|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 10:19:34|INFO|User:superadmin|Action:Importación|Message:Se importaron 0 Vehicles
+Fecha:21/10/2017 10:48:37|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 10:48:46|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicles
+Fecha:21/10/2017 11:25:13|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 11:27:20|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 11:37:45|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 11:44:31|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:21/10/2017 11:48:08|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión

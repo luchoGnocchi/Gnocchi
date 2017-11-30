@@ -1,0 +1,12 @@
+Fecha:18/10/2017 10:44:06|CREATE LOG FILE
+Fecha:18/10/2017 10:44:07|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 10:46:51|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 10:50:37|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:11:45|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:15:56|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:16:48|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:17:06|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicleos
+Fecha:18/10/2017 11:18:59|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:19:10|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicleos
+Fecha:18/10/2017 11:37:11|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:18/10/2017 11:37:21|INFO|User:superadmin|Action:Importación|Message:Se importaron 2 Vehicleos

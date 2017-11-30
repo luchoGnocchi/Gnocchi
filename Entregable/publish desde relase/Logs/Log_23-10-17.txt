@@ -1,0 +1,4 @@
+Fecha:23/10/2017 11:27:17|CREATE LOG FILE
+Fecha:23/10/2017 11:27:42|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:23/10/2017 11:30:39|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
+Fecha:23/10/2017 11:37:33|INFO|User:superadmin|Action:Login|Message:Inicio de Sesión
