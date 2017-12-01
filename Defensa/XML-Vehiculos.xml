@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Vehiculos>
+	 <Vehiculo>
+		 <Marca>Marca 1 import</Marca>
+		 <Modelo>Modelo 1 import </Modelo>
+		 <Año>2018 </Año>
+		 <Color>Rojo import </Color>
+		 <Tipo>1</Tipo>
+		 <VIN>VIN 1 import  </VIN>
+	</Vehiculo>
+	<Vehiculo>
+		 <Marca>Marca 1 import</Marca>
+		 <Modelo>Modelo 1 import </Modelo>
+		 <Año>2018 </Año>
+		 <Color>Rojo import </Color>
+		 <Tipo>1</Tipo>
+		 <VIN>VIN 2 import  </VIN>
+	</Vehiculo>
+<Vehiculo>
+		 <Marca>Marca 3 import</Marca>
+		 <Modelo>Modelo 3 import </Modelo>
+		 <Año>2018 </Año>
+		 <Color>Rojo import 3</Color>
+		 <Tipo>1</Tipo>
+		 <VIN>VIN 3 import  </VIN>
+	</Vehiculo>
+</Vehiculos>

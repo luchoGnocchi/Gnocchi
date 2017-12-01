@@ -1,0 +1,90 @@
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">Detalle del lote: {{batch.Name}}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row animated fadeIn fast">
+            <div class="col-md-12">
+
+
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">
+                        <b>Nombre</b>
+                    </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="Name" [(ngModel)]="batch.Name" readonly disabled>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">
+                        <b>Descripción</b>
+                    </label>
+                    <div class="col-sm-10"></div>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" type="text" name="Descripcion" [(ngModel)]="batch.Description" readonly disabled>
+                    </textarea> </div>
+                </div>
+                <div class="form-group row">
+
+                    <label class="col-sm-6 col-form-label">
+                        <b>Lista de vehiculos en lote</b>
+                    </label>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-12">
+                        <div class='table-responsive'>
+                            <table class='table' *ngIf='batch.Vehicles && batch.Vehicles.length'>
+                                <!--Cabezal de la tabla -->
+                                <thead>
+                                    <tr>
+                                        <th>VIM</th>
+                                        <th>Marca</th>
+                                        <th>Modelo</th>
+                                        <th>Año</th>
+                                        <th>Color</th>
+                                        <th>Tipo</th>
+
+                                    </tr>
+                                </thead>
+                                <!--Cuerpo de la tabla-->
+                                <tbody>
+                                    <tr *ngFor='let vehicle of batch.Vehicles, let i = index '>
+
+                                        <td>
+                                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                                        </td>
+                                        <td>{{vehicle.Brand }}</td>
+                                        <td>{{vehicle.Model }}</td>
+                                        <td>{{vehicle.Year }}</td>
+                                        <td>{{vehicle.Color }}</td>
+                                        <td>
+                                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+
+        <button type="button" class="btn btn-outline-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+<a (click)="open(content)">
+    <i class="fa fa-eye" aria-hidden="true"></i>
+</a>
+<br>
+<br>

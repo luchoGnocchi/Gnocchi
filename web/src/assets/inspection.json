@@ -1,0 +1,1279 @@
+[
+    {
+        "DamageRegistries": [
+            {
+                "Id": 1,
+                "Description": "Golpes en el paragolpe",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 48,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:14.353"
+                },
+                {
+                    "Id": 61,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:22.09"
+                }
+            ],
+            "Inspections": [],
+            "Id": 48,
+            "Brand": "Audi",
+            "Model": "A3",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1496"
+        },
+        "Id": 1,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:22.09",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 48
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 2,
+                "Description": "Se rompio una llanta",
+                "Image": null
+            },
+            {
+                "Id": 3,
+                "Description": "Se rompio el motorxxxxxxxxxxxxxxxx",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 10,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:10.717"
+                },
+                {
+                    "Id": 62,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:54.317"
+                }
+            ],
+            "Inspections": [],
+            "Id": 10,
+            "Brand": "Toyota",
+            "Model": "Crolla",
+            "Year": 2017,
+            "BatchId": null,
+            "Color": "Amarillo Patito",
+            "VehicleType": 1,
+            "VIN": "VIM 1450"
+        },
+        "Id": 2,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:54.317",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 10
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 4,
+                "Description": "Se rompio el paragolpe ",
+                "Image": null
+            },
+            {
+                "Id": 5,
+                "Description": "Se rompio una llanta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 8,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:55:53.407"
+                },
+                {
+                    "Id": 63,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:54.44"
+                }
+            ],
+            "Inspections": [],
+            "Id": 8,
+            "Brand": "Toyota",
+            "Model": "Crolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1451"
+        },
+        "Id": 3,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:54.44",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 8
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 6,
+                "Description": "Se rompio la rueda",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 11,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:10.797"
+                },
+                {
+                    "Id": 64,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:54.67"
+                }
+            ],
+            "Inspections": [],
+            "Id": 11,
+            "Brand": "Mitsubishi",
+            "Model": "Outlander",
+            "Year": 2017,
+            "BatchId": null,
+            "Color": "Dorado",
+            "VehicleType": 1,
+            "VIN": "VIM 1454"
+        },
+        "Id": 4,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:54.67",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 11
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 7,
+                "Description": "Se rompio el paragolpe",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 12,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:10.88"
+                },
+                {
+                    "Id": 65,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:54.773"
+                }
+            ],
+            "Inspections": [],
+            "Id": 12,
+            "Brand": "Chevrolet",
+            "Model": "Trax",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1457"
+        },
+        "Id": 5,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:54.773",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 12
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 8,
+                "Description": "Se rompio la puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 13,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.06"
+                },
+                {
+                    "Id": 66,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:54.963"
+                }
+            ],
+            "Inspections": [],
+            "Id": 13,
+            "Brand": "Peugeot",
+            "Model": "208",
+            "Year": 2017,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1459"
+        },
+        "Id": 6,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:54.963",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 13
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 9,
+                "Description": "Se rompio el freno",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 15,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.383"
+                },
+                {
+                    "Id": 67,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.25"
+                }
+            ],
+            "Inspections": [],
+            "Id": 15,
+            "Brand": "Fiat",
+            "Model": "500",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rosado",
+            "VehicleType": 1,
+            "VIN": "VIM 1462"
+        },
+        "Id": 7,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.25",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 15
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 10,
+                "Description": "Se rompio la ventana",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 17,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.55"
+                },
+                {
+                    "Id": 68,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.423"
+                }
+            ],
+            "Inspections": [],
+            "Id": 17,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2017,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1464"
+        },
+        "Id": 8,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.423",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 17
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 11,
+                "Description": "Se rompio una rueda",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 16,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.47"
+                },
+                {
+                    "Id": 69,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.52"
+                }
+            ],
+            "Inspections": [],
+            "Id": 16,
+            "Brand": "Mitsubishi",
+            "Model": "Lancer",
+            "Year": 2017,
+            "BatchId": null,
+            "Color": "Gris",
+            "VehicleType": 1,
+            "VIN": "VIM 1465"
+        },
+        "Id": 9,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.52",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 16
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 12,
+                "Description": "Se rompio el parabrisa",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 18,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.63"
+                },
+                {
+                    "Id": 70,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.693"
+                }
+            ],
+            "Inspections": [],
+            "Id": 18,
+            "Brand": "Audi",
+            "Model": "A3",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1466"
+        },
+        "Id": 10,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.693",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 18
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 13,
+                "Description": "Rayaduras en la puerta de atras",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 20,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.787"
+                },
+                {
+                    "Id": 71,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.86"
+                }
+            ],
+            "Inspections": [],
+            "Id": 20,
+            "Brand": "Ford",
+            "Model": "Fiesta",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1467"
+        },
+        "Id": 11,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.86",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 20
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 14,
+                "Description": "Rayaduras en el parabrisa",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 26,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.283"
+                },
+                {
+                    "Id": 72,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:55.947"
+                }
+            ],
+            "Inspections": [],
+            "Id": 26,
+            "Brand": "Mitsubishi",
+            "Model": "Outlander",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1468"
+        },
+        "Id": 12,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:55.947",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 26
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 15,
+                "Description": "Abolladura en la puerta del conductor",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 21,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.867"
+                },
+                {
+                    "Id": 73,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:56.117"
+                }
+            ],
+            "Inspections": [],
+            "Id": 21,
+            "Brand": "Mitsubishi",
+            "Model": "Outlander",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1469"
+        },
+        "Id": 13,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:56.117",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 21
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 16,
+                "Description": "Abolladura en la parte de atras",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 22,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.95"
+                },
+                {
+                    "Id": 74,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:56.22"
+                }
+            ],
+            "Inspections": [],
+            "Id": 22,
+            "Brand": "Mitsubishi",
+            "Model": "Outlander",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1470"
+        },
+        "Id": 14,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:56.22",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 22
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 17,
+                "Description": "Abolladura en el frente",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 19,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:11.71"
+                },
+                {
+                    "Id": 75,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:56.44"
+                }
+            ],
+            "Inspections": [],
+            "Id": 19,
+            "Brand": "Mitsubishi",
+            "Model": "Outlander",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1471"
+        },
+        "Id": 15,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:56.44",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 19
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 18,
+                "Description": "Rayaduras en el frente",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 23,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.033"
+                },
+                {
+                    "Id": 76,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:56.543"
+                }
+            ],
+            "Inspections": [],
+            "Id": 23,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1472"
+        },
+        "Id": 16,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:56.543",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 23
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 19,
+                "Description": "Se rompio una puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 25,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.193"
+                },
+                {
+                    "Id": 77,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:56.743"
+                }
+            ],
+            "Inspections": [],
+            "Id": 25,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1474"
+        },
+        "Id": 17,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:56.743",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 25
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 20,
+                "Description": "Se rompieron las luces",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 24,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.117"
+                }
+            ],
+            "Inspections": [],
+            "Id": 24,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1473"
+        },
+        "Id": 18,
+        "Status": 2,
+        "DateAndTime": "2017-11-04T22:56:56.837",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 24
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 21,
+                "Description": "Se rayo una puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 27,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.37"
+                }
+            ],
+            "Inspections": [],
+            "Id": 27,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1475"
+        },
+        "Id": 19,
+        "Status": 2,
+        "DateAndTime": "2017-11-04T22:56:56.923",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 27
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 22,
+                "Description": "Se rayo otra puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 28,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.453"
+                }
+            ],
+            "Inspections": [],
+            "Id": 28,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1476"
+        },
+        "Id": 20,
+        "Status": 2,
+        "DateAndTime": "2017-11-04T22:56:57.033",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 28
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 23,
+                "Description": "Se rompieron tres ruedas",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 29,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.547"
+                }
+            ],
+            "Inspections": [],
+            "Id": 29,
+            "Brand": "Fiat",
+            "Model": "Uno",
+            "Year": 2015,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1477"
+        },
+        "Id": 21,
+        "Status": 2,
+        "DateAndTime": "2017-11-04T22:56:57.14",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 29
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 24,
+                "Description": "Se rayo el parabrisa",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 31,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.72"
+                },
+                {
+                    "Id": 78,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.253"
+                }
+            ],
+            "Inspections": [],
+            "Id": 31,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Blanco",
+            "VehicleType": 1,
+            "VIN": "VIM 1478"
+        },
+        "Id": 22,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.253",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 31
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 25,
+                "Description": "Se rayo el paragolpe",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 30,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.63"
+                },
+                {
+                    "Id": 79,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.347"
+                }
+            ],
+            "Inspections": [],
+            "Id": 30,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1479"
+        },
+        "Id": 23,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.347",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 30
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 26,
+                "Description": "Se abollo el paragolpe",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 32,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.803"
+                },
+                {
+                    "Id": 80,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.44"
+                }
+            ],
+            "Inspections": [],
+            "Id": 32,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1480"
+        },
+        "Id": 24,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.44",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 32
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 27,
+                "Description": "Se abollo el parabrisa",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 33,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.887"
+                },
+                {
+                    "Id": 81,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.537"
+                }
+            ],
+            "Inspections": [],
+            "Id": 33,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1481"
+        },
+        "Id": 25,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.537",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 33
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 28,
+                "Description": "Se abollo la puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 34,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:12.973"
+                },
+                {
+                    "Id": 82,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.623"
+                }
+            ],
+            "Inspections": [],
+            "Id": 34,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1482"
+        },
+        "Id": 26,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.623",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 34
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 29,
+                "Description": "Se rompio el motor",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 35,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.06"
+                },
+                {
+                    "Id": 83,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.717"
+                }
+            ],
+            "Inspections": [],
+            "Id": 35,
+            "Brand": "Chevrolet",
+            "Model": "Onix",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Rojo",
+            "VehicleType": 1,
+            "VIN": "VIM 1483"
+        },
+        "Id": 27,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.717",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 35
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 30,
+                "Description": "Se rompio la palanca de cambios",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 36,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.143"
+                },
+                {
+                    "Id": 84,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.81"
+                }
+            ],
+            "Inspections": [],
+            "Id": 36,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1484"
+        },
+        "Id": 28,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.81",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 36
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 31,
+                "Description": "Se rompio la palanca de cambios",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 37,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.233"
+                },
+                {
+                    "Id": 85,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:57.903"
+                }
+            ],
+            "Inspections": [],
+            "Id": 37,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1485"
+        },
+        "Id": 29,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:57.903",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 37
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 32,
+                "Description": "Se rompio un vidrio",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 38,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.323"
+                },
+                {
+                    "Id": 86,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:58"
+                }
+            ],
+            "Inspections": [],
+            "Id": 38,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1486"
+        },
+        "Id": 30,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:58",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 38
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 33,
+                "Description": "Se rompio el embriague",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 39,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.417"
+                },
+                {
+                    "Id": 87,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:58.093"
+                }
+            ],
+            "Inspections": [],
+            "Id": 39,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Azul",
+            "VehicleType": 1,
+            "VIN": "VIM 1487"
+        },
+        "Id": 31,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:58.093",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 39
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 34,
+                "Description": "Se rompio el embriague",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 40,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.517"
+                },
+                {
+                    "Id": 88,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:58.19"
+                }
+            ],
+            "Inspections": [],
+            "Id": 40,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Gris",
+            "VehicleType": 1,
+            "VIN": "VIM 1488"
+        },
+        "Id": 32,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:58.19",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 40
+    },
+    {
+        "DamageRegistries": [
+            {
+                "Id": 35,
+                "Description": "Rayaduras en la puerta",
+                "Image": null
+            }
+        ],
+        "Vehicle": {
+            "Batch": null,
+            "HistoryState": [
+                {
+                    "Id": 41,
+                    "PlaceInMoment": 1,
+                    "CurrentDate": "2017-11-04T22:56:13.603"
+                },
+                {
+                    "Id": 89,
+                    "PlaceInMoment": 2,
+                    "CurrentDate": "2017-11-04T22:56:58.287"
+                }
+            ],
+            "Inspections": [],
+            "Id": 41,
+            "Brand": "Toyota",
+            "Model": "Corolla",
+            "Year": 2016,
+            "BatchId": null,
+            "Color": "Gris",
+            "VehicleType": 1,
+            "VIN": "VIM 1489"
+        },
+        "Id": 33,
+        "Status": 1,
+        "DateAndTime": "2017-11-04T22:56:58.287",
+        "Place": 1,
+        "Inspector": null,
+        "VehicleId": 41
+    }
+]

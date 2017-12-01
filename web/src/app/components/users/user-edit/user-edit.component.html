@@ -1,0 +1,71 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Editar Usuario {{user.UserName}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row animated fadeIn fast">
+      <div class="col-md-12">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Username</b>
+            </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" required placeholder="Ingrese username" name="username" minlength="4" [(ngModel)]="user.UserName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Rol</b>
+            </label>
+            <div class="col-sm-10">
+              <select class="form-control" name=rol [(ngModel)]="user.Rol_Id">
+                <option value="1">Admin</option>
+                <option value="2">Operario Puerto</option>
+                <option value="3">Transportista</option>
+                <option value="4">Operario de patio</option>
+                <option value="5">Vendedor</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Nombre</b>
+            </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" required placeholder="Ingrese el nombre" name="Name" minlength="4" [(ngModel)]="user.Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Apellido</b>
+            </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" required placeholder="Ingrese el apellido" name="Surname" minlength="4" [(ngModel)]="user.Surname">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Telefono</b>
+            </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="number" required placeholder="Ingrese su telefono" name="Telephone" minlength="4" [(ngModel)]="user.Telephone">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-success" (click)="update()" [disabled]='!forma.valid'>Editar</button>
+    <button type="button" class="btn btn-outline-danger" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+<a (click)="open(content)">
+  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</a>

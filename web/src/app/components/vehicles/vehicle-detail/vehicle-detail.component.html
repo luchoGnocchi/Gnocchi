@@ -1,0 +1,74 @@
+<h1>Detalle de vehiculo
+  <small>Vin: {{vehicle.VIN}}</small>
+</h1>
+<hr>
+<div class="row">
+  <div class="col-md-4">
+    <img *ngIf='vehicle.VehicleType=="1"' src="assets/img/auto.jpg" class="img-fluid" alt="">
+    <img *ngIf='vehicle.VehicleType=="2"' src="assets/img/sub.jpg" class="img-fluid" alt="">
+    <img *ngIf='vehicle.VehicleType=="3"' src="assets/img/jeep.jpg" class="img-fluid" alt="">
+    <img *ngIf='vehicle.VehicleType=="4"' src="assets/img/moto.jpg" class="img-fluid" alt="">
+    <br>
+    <br>
+
+    <button (click)="backClicked()" class="btn btn-outline-danger btn-block">Regresar</button>
+  </div>
+  <div class="col-md-8">
+    <h3>Modelo:
+      <small>{{vehicle.Model}}</small>
+    </h3>
+    <hr>
+    <h3>Marca:
+      <small>{{vehicle.Brand}}</small>
+    </h3>
+    <hr>
+    <h3>Año:
+      <small>{{vehicle.Year}}</small>
+    </h3>
+    <hr>
+    <h3>Color:
+      <small>{{vehicle.Color}}</small>
+    </h3>
+    <hr>
+    <h3>Lote:
+      <small>{{vehicle.Batch?.Name}}</small>
+    </h3>
+    <hr>
+    <h3>Zona:
+        <small>{{vehicle.zone?.Name}}</small>
+      </h3>
+    <hr>
+
+  </div>
+
+</div>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Inspecciones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Historial de Movimientos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Movimientos Zonas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">
+    <app-inspection [Vehicle]='vehicle'></app-inspection>
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel">
+    <app-history [Vehicle]='vehicle'></app-history>
+  </div>
+  <div class="tab-pane" id="messages" role="tabpanel">
+    <app-movement-in-zones [Vehicle]='vehicle'></app-movement-in-zones>
+  </div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>

@@ -1,0 +1,288 @@
+<br>
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+
+    <div class='card-body'>
+
+
+
+        <!-- Mensaje de error -->
+        <div class='has-error'> </div>
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive'>
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==2)'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <h1>En puerto</h1>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==1">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==1">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==1">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==1">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==1">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==1">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==1">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==3)'>
+                <!--Cabezal de la tabla -->
+                <h1>Esperando para salir</h1>
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==2">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==2">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==2">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==2">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==2">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==2">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==2">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==3)'>
+                <h1>En Viaje</h1>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==3">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==3">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==3">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==3">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==3">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==3">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==3">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==4)'>
+                <h1>En Patio</h1>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==4">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==4">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==4">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==4">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==4">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==4">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==4">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==4)'>
+                <h1>En Zona</h1>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==5">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==5">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==5">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==5">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==5">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==5">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==5">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+            <table class='table' *ngIf='vehicles && vehicles.length && (idRol==1 || idRol==5)'>
+                <h1>Vendido/En Venta</h1>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td *ngIf="vehicle.HistoryState.length==6">
+                            <a (click)="verVehicle(i)"> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==6">{{vehicle.Brand }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==6">{{vehicle.Model }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==6">{{vehicle.Year }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==6">{{vehicle.Color }}</td>
+                        <td *ngIf="vehicle.HistoryState.length==6">
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td *ngIf="vehicle.HistoryState.length==6">
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="verVehicle(vehicle.Id)">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+    </div>
+</div>

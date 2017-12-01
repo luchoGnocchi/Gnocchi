@@ -1,0 +1,60 @@
+<br>
+
+
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+
+    <div class='card-body'>
+
+
+        <!-- Mensaje de error -->
+        <div class='has-error'> </div>
+        <div class="text-right">
+            <app-user-create></app-user-create>
+        </div>
+
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive'>
+            <table class='table' *ngIf='users && users.length'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>UserName</th>
+                        <th>Rol</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let user of users, let i = index '>
+
+                        <td>
+                            <a (click)="verVehicle(i)"> {{user.UserName | uppercase}} </a>
+                        </td>
+                        <td>
+                            <div *ngIf='user.Rol_Id=="1"'>Admin</div>
+                            <div *ngIf='user.Rol_Id=="2"'>Operador de Puerto</div>
+                            <div *ngIf='user.Rol_Id=="3"'>Transportista</div>
+                            <div *ngIf='user.Rol_Id=="4"'>Operario de patio</div>
+                            <div *ngIf='user.Rol_Id=="5"'>Vendedor</div>
+                        </td>
+                        <td>{{user.Name}}</td>
+                        <td>{{user.Surname}}</td>
+                        <td>{{user.Telephone}}</td>
+                        <td>
+
+                            <app-user-view [user]="user"></app-user-view>
+                            <app-user-edit [user]="user"></app-user-edit>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+[
+    {
+        "Batch": null,
+        "HistoryState": [
+            {
+                "Id": 3,
+                "PlaceInMoment": 1,
+                "CurrentDate": "2017-10-21T09:35:35.083"
+            }
+        ],
+        "Inspections": [],
+        "Id": 3,
+        "Brand": "Marca 3",
+        "Model": "Modelo 3 Desc",
+        "Year": 2017,
+        "BatchId": null,
+        "Color": " Azul2",
+        "VehicleType": 1,
+        "VIN": "VIN 3"
+    },
+    {
+        "Batch": null,
+        "HistoryState": [
+            {
+                "Id": 4,
+                "PlaceInMoment": 1,
+                "CurrentDate": "2017-10-21T09:35:35.1"
+            }
+        ],
+        "Inspections": [],
+        "Id": 4,
+        "Brand": "Marca 4",
+        "Model": "Modelo 4 Desc",
+        "Year": 2017,
+        "BatchId": null,
+        "Color": " Rojo",
+        "VehicleType": 2,
+        "VIN": "VIN 4"
+    },
+    {
+        "Batch": null,
+        "HistoryState": [
+            {
+                "Id": 5,
+                "PlaceInMoment": 1,
+                "CurrentDate": "2017-10-21T10:48:46.58"
+            }
+        ],
+        "Inspections": [],
+        "Id": 5,
+        "Brand": "Marca 1",
+        "Model": "Modelo 1",
+        "Year": 2018,
+        "BatchId": null,
+        "Color": "Rojo",
+        "VehicleType": 1,
+        "VIN": "VIN 1"
+    },
+    {
+        "Batch": null,
+        "HistoryState": [
+            {
+                "Id": 6,
+                "PlaceInMoment": 1,
+                "CurrentDate": "2017-10-21T10:48:46.597"
+            }
+        ],
+        "Inspections": [],
+        "Id": 6,
+        "Brand": "Marca 2",
+        "Model": "Modelo 2",
+        "Year": 2018,
+        "BatchId": null,
+        "Color": "Blanco",
+        "VehicleType": 2,
+        "VIN": "VIN 2"
+    },
+    {
+        "Batch": null,
+        "HistoryState": [
+            {
+                "Id": 7,
+                "PlaceInMoment": 1,
+                "CurrentDate": "2017-11-02T02:43:48.81"
+            }
+        ],
+        "Inspections": [],
+        "Id": 7,
+        "Brand": "312312",
+        "Model": "123312",
+        "Year": 342243,
+        "BatchId": null,
+        "Color": "123",
+        "VehicleType": 1,
+        "VIN": "123312"
+    }
+]

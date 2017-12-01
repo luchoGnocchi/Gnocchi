@@ -1,0 +1,58 @@
+<br>
+
+
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+
+    <div class='card-body'>
+
+
+        <!-- Mensaje de error -->
+        <div class='has-error'> </div>
+        <div class="text-right">
+            <app-create-batch></app-create-batch>
+        </div>
+
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive'>
+            <table class='table' *ngIf='batchs && batchs.length'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Vehiculos</th>
+                        <th>Creador</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let batch of batchs, let i = index '>
+
+                        <td>
+                            <a (click)="verVehicle(batch.Id)"> {{batch.Id }} </a>
+                        </td>
+
+                        <td>{{batch.Name}}</td>
+                        <td>{{batch.Description}}</td>
+                        <td>
+                            <span *ngFor='let vehicle of batch.Vehicles'> {{vehicle.VIN}} </span>
+                        </td>
+
+                        <td>{{ batch.User ===null ? '-' : batch.User.UserName }}</td>
+                        <td>
+                            <app-edit-batch [batch]="batch"></app-edit-batch>
+                            <app-remove-batch [batch]="batch"></app-remove-batch>
+                            <app-view-batch [batch]="batch"></app-view-batch>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

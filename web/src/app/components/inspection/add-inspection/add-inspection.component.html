@@ -1,0 +1,88 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Inspección a {{vehicle.VIN}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row animated fadeIn fast">
+      <div class="col-md-12">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+          <!-- <div class="form-group">
+                  <label>Inspeccion</label>
+                  <input tyApe="text"  class="form-control"  name="Id" required  [(ngModel)]=inspectionNew.Id>
+                </div> -->
+
+
+          <div class="form-group">
+
+<table class='table' *ngIf='vehicle.Inspections.length && vehicle.Inspections[0].DamageRegistries!=null'>
+  <label>Detalles de la ultima inspeccion</label>
+  <thead>
+      <tr>
+          <th>Descripcion</th>
+          <th>Img</th>
+
+      </tr>
+  </thead>
+  <!--Cuerpo de la tabla-->
+  <tbody>
+      <tr *ngFor='let vehicle2 of vehicle.Inspections[0].DamageRegistries, let i = index '>
+          <td>{{vehicle2.Description}}</td>
+          <td><img style="width:100% !important;"   class="img-responsive" [src]="'data:image/jpg;base64,'+vehicle2.Image" /></td>
+
+      </tr>
+  </tbody>
+</table>
+
+            <label>Lugar</label>
+            <select type="text" class="form-control" required name="Place" [(ngModel)]=inspectionNew.Place>
+
+              <option value="1"  *ngIf="idRol==1 ||idRol==2 ">Puerto</option>
+              <option value="2" *ngIf="idRol==1 ||idRol==4 ">Patio</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Estado</label>
+            <select type="text" class="form-control" required name="Status" [(ngModel)]=inspectionNew.Status>
+              <option value="1">Ok</option>
+              <option value="2">Dañado</option>
+            </select>
+          </div>
+
+        <table class='table' *ngIf='inspectionNew && inspectionNew.DamageRegistries.length'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Descripcion</th>
+                        <th>Img</th>
+
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let DamageReg of inspectionNew.DamageRegistries, let i = index '>
+                        <td>{{DamageReg.Description}}</td>
+                        <td><img style="width:100% !important;"   class="img-responsive" [src]="'data:image/jpg;base64,'+DamageReg.Image" /></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+
+        <app-add-damage
+          (AgregarInspeccion)='AgregarInspeccion($event)'>
+        </app-add-damage>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-success" (click)="guardar()" [disabled]='!forma.valid'> Guardar cambios</button>
+    <button type="button" class="btn btn-outline-danger" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+<button class="btn btn-outline-primary" (click)="open(content)">Nuevo</button>
+<br>
+<br>

@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="blnDisplayMenu">
+  <!-- Image and text -->
+
+  <a class="navbar-brand" href="#">
+    <img src="http://img.viajeauruguay.com/ort-uruguay.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> DA2 L.Gnocchi
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item" *ngIf="rol==1">
+        <a class="nav-link" [routerLink]="['home']">Hola Admin! </a>
+      </li>
+      <li class="nav-item" *ngIf="rol==2">
+        <a class="nav-link" [routerLink]="['home']">Hola Operario Puerto! </a>
+      </li>
+      <li class="nav-item" *ngIf="rol==3">
+        <a class="nav-link" [routerLink]="['home']">Hola Transportista! </a>
+      </li>
+      <li class="nav-item" *ngIf="rol==4">
+        <a class="nav-link" [routerLink]="['home']">Hola Operario Patio! </a>
+      </li>
+      <li class="nav-item" *ngIf="rol==5">
+        <a class="nav-link" [routerLink]="['home']">Hola Vendedor! </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']">Home </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['batch']">Batch</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['batchTransport']">Lotes a Transportar</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['vehicle']">Vehiculos</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['users']">Usuarios</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['sell']">Vender</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['about']">About</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" (click)=logout()>Salir</a>
+      </li>
+
+
+    </ul>
+    <form class="form-inline" (ngSubmit)="buscar()" #forma="ngForm">
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar VIN" aria-label="Search" name="VINTofind" [(ngModel)]=VIN>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [disabled]='!forma.valid'>Buscar</button>
+    </form>
+  </div>
+</nav>

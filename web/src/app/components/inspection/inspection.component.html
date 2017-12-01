@@ -1,0 +1,49 @@
+<br>
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        Inspecciones de {{Vehicle.VIN}}
+    </div>
+
+    <div class='card-body'>
+        <!-- Selector de filtro:  -->
+        <div class="text-right">
+            <app-add-inspection [vehicle]='Vehicle'></app-add-inspection>
+        </div>
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive'>
+            <table class='table' *ngIf='inspections && inspections.length'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Status</th>
+                        <th>Fecha</th>
+                        <th>Lugar</th>
+                        <th>Ver</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let inspection of Vehicle.Inspections, let i = index '>
+
+                        <td>
+                            <a (click)="verInspection(i)"> {{inspection.Id }} </a>
+                        </td>
+                        <td *ngIf='inspection.Status=="1"'>Ok</td>
+                        <td *ngIf='inspection.Status=="2"'>Dañado</td>
+
+                        <td>{{inspection.DateAndTime }}</td>
+
+                        <td *ngIf='inspection.Place=="1"'>Puerto</td>
+                        <td *ngIf='inspection.Place=="2"'>Patio</td>
+                        <td>
+                          <app-view-detail-Inspection [inspectionNew]='inspection'></app-view-detail-Inspection>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

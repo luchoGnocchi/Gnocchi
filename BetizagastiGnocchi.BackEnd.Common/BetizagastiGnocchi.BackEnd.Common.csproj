@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6733EF9D-85C5-4E77-B349-26D8AE370A53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BetizagastiGnocchi.BackEnd.Common</RootNamespace>
+    <AssemblyName>BetizagastiGnocchi.BackEnd.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\Domain\Zone\ZoneMaximunVioledException.cs" />
+    <Compile Include="Exceptions\Domain\Vehicle\VehicleNotIStateException.cs" />
+    <Compile Include="Exceptions\Domain\Vehicle\VehicleNotInspectedException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchAlreadyRegisteredInBatchTransportException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchTransportNoAllAlVehiclesReadyException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchTransportNoReadyToTransportException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchTransportNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchTransportWithEmptyBatchException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\BatchTransportWithoutVehicleException.cs" />
+    <Compile Include="Exceptions\Services\BatchTransport\StartDateNullorGreaterThanTheDateOfArrivalException.cs" />
+    <Compile Include="Exceptions\Services\Batch\BatchAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\Batch\BatchException.cs" />
+    <Compile Include="Exceptions\Services\Batch\BatchNotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\Batch\BatchNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\Batch\BatchWithoutVehicleException.cs" />
+    <Compile Include="Exceptions\Services\General\ActionUnauthorizedException.cs" />
+    <Compile Include="Exceptions\Services\General\InternalErrorException.cs" />
+    <Compile Include="Exceptions\Services\General\TokenHasExpiredException.cs" />
+    <Compile Include="Exceptions\Services\Inspection\InspectionAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\Inspection\InspectionException.cs" />
+    <Compile Include="Exceptions\Services\Inspection\InspectionNotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\Inspection\InspectionNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\Inspection\InspectionWithoutVehicleException.cs" />
+    <Compile Include="Exceptions\Services\User\RolNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\User\UserAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\User\UserCreatedNotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\User\UserDeleteByIdNotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\User\UserException.cs" />
+    <Compile Include="Exceptions\Services\User\UserIsTheOnlyAdminException.cs" />
+    <Compile Include="Exceptions\Services\User\UserNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\User\UserUpdateNotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\User\WrongPasswordException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\NotAuthorizedException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\ProviderDontHaveParticularFieldsException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\ProviderIsInInvoiceException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\ProviderNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleCommissionIsPercentageException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleNameAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleIsNotInYardException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleNotReadyToMoveException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleVINAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleNotFoundException.cs" />
+    <Compile Include="Exceptions\Services\Vehicle\VehicleWithoutNameException.cs" />
+    <Compile Include="Exceptions\Services\Zone\ZoneAlreadyRegisteredException.cs" />
+    <Compile Include="Exceptions\Services\Zone\ZoneMaximumSizeExceededException.cs" />
+    <Compile Include="Exceptions\Services\Zone\ZoneNotFoundException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

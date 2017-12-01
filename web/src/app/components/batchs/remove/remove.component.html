@@ -1,0 +1,19 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Desea borrar {{batch.Name}} ?</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="eliminiar()">Borrar</button>
+
+    <button type="button" class="btn btn-outline-primary" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+<a (click)="open(content)">
+  <i class="fa fa-trash" aria-hidden="true"></i>
+</a>

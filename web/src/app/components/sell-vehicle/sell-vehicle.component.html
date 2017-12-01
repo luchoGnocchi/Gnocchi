@@ -1,0 +1,57 @@
+<br>
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+
+    <div class='card-body'>
+
+
+
+        <!-- Mensaje de error -->
+        <div class='has-error'> </div>
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive'>
+            <table class='table' *ngIf='vehicles && vehicles.length'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>VIM</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <tr *ngFor='let vehicle of vehicles, let i = index '>
+
+                        <td>
+                            <a> {{vehicle.VIN | uppercase}} </a>
+                        </td>
+                        <td>{{vehicle.Brand }}</td>
+                        <td>{{vehicle.Model }}</td>
+                        <td>{{vehicle.Year }}</td>
+                        <td>{{vehicle.Color }}</td>
+                        <td>
+                            <div *ngIf='vehicle.VehicleType=="1"'>Auto</div>
+                            <div *ngIf='vehicle.VehicleType=="2"'>Suv</div>
+                            <div *ngIf='vehicle.VehicleType=="3"'>Jeep</div>
+                            <div *ngIf='vehicle.VehicleType=="4"'>Moto</div>
+                        </td>
+                        <td>
+                            <app-createsell *ngIf='vehicle.sell.Price==null || vehicle.sell.Price==0' [vehicle]="vehicle"></app-createsell>
+                            <app-viewsell *ngIf=' vehicle.sell.Price!=0' [vehicle]="vehicle"></app-viewsell>
+                            <!--  <a (click)="verVehicle(vehicle.Id)"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                          <a (click)="verVehicle(vehicle.Id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>-->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

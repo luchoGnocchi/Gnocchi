@@ -1,0 +1,42 @@
+<br>
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+        Historial de {{Vehicle.VIN}}
+    </div>
+
+    <div class='card-body'>
+        <!-- Selector de filtro:  -->
+        <div class="text-right">
+            <!-- <app-add-inspection  [VIN]='Vehicle.VIN' ></app-add-inspection> -->
+        </div>
+
+        <!--Tabla de mascotas -->
+        <div class='table-responsive' (click)="haciendoclick()">
+            <table class='table'>
+                <!--Cabezal de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Lugar</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+
+                    <tr *ngFor='let history of Vehicle.HistoryState, let i = index '>
+
+                        <td>
+                            <a> {{history.CurrentDate }} </a>
+                        </td>
+                        <td *ngIf='history.PlaceInMoment==1'>Puerto</td>
+                        <td *ngIf='history.PlaceInMoment==2'>Esperando Para Salir</td>
+                        <td *ngIf='history.PlaceInMoment==3'>En Transporte</td>
+                        <td *ngIf='history.PlaceInMoment==4'>Patio</td>
+                        <td *ngIf='history.PlaceInMoment==5'>En Zona</td>
+                        <td *ngIf='history.PlaceInMoment==6'>Vendido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

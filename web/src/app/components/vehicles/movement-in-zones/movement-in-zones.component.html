@@ -1,0 +1,38 @@
+
+<br>
+<div class='card text-black bg-light  mb-3'>
+    <div class='card-header'>
+       Historial  de {{Vehicle.VIN}}
+    </div>
+
+    <div class='card-body'>
+      <!-- Selector de filtro:  -->
+      <div class="text-right"> <app-add-movement [Vehicle]='Vehicle'></app-add-movement></div>
+      
+      <!--Tabla de mascotas -->
+      <div class='table-responsive' (click)="haciendoclick()">
+          <table class='table'  >
+              <!--Cabezal de la tabla -->
+              <thead>
+                  <tr>
+                      <th>Fecha/Hora Ingreso</th>
+                      <th>Desde </th>
+                      <th>Hacia </th>
+                  </tr>
+              </thead>
+              <!--Cuerpo de la tabla-->
+              <tbody>
+             
+                  <tr *ngFor='let Movement of Vehicle.MovementInZone, let i = index '>
+                      <td><a> {{Movement.Time | date: 'dd/MM/yyyy hh:mm' }} </a></td>
+                     
+                   <td ><a> {{Movement.OriginZone?.Name }} </a></td>
+                    <td><a> {{Movement.DestinationZone.Name }} </a></td>  
+                     <td *ngIf='Movement.id==1'>Puerto</td>
+                      
+                  </tr>  
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>

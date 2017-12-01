@@ -1,0 +1,58 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Crear Lote</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row animated fadeIn fast">
+      <div class="col-md-12">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Nombre</b>
+            </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" required placeholder="Ingrese el nombre" name="Name" minlength="4" [(ngModel)]="batch.Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Vehiculos</b>
+            </label>
+            <div class="col-sm-9">
+              <select name="v" class="form-control" id="cmbVehicle" [(ngModel)]="vehicleStr" name="vehicleStr[]" multiple="multiple">
+                <option name="a" *ngFor="let c of vehicles " [ngValue]="c.VIN">{{c.VIN}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">
+              <b>Descripción</b>
+            </label>
+            <div class="col-sm-10"></div>
+            <div class="col-sm-12">
+              <textarea class="form-control" type="text" required placeholder="Ingrese el apellido" name="Surname" minlength="4" [(ngModel)]="batch.Description">
+                    </textarea> </div>
+          </div>
+          <!--   
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label"><b>Telefono</b></label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="number" required  placeholder="Ingrese su telefono" name="Telephone" minlength="4" [(ngModel)]="user.Telephone">
+                  </div>
+                </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-success" (click)="register()" [disabled]='!forma.valid'> Guardar cambios</button>
+    <button type="button" class="btn btn-outline-danger" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+<button class="btn btn-outline-primary" (click)="open(content)">Crear Lote</button>
+<br>
+<br>
